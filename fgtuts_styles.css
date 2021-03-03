@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+/*
+  Fantasy Grounds Tutorials
+  Structural Stylesheet
+
+	File Name: 	fgtuts_styles.css
+  Author: 		Sarah Browning
+  Date: 			December 16, 2020
+
+*/
+
+/* Typographic Styles */
+
+body {
+  font-family: Lora, Georgia, serif;
+  font-size: 1.1em;
+  color: black;
+}
+
+body a {
+  color: rgb(56, 30, 0);
+  text-decoration: none;
+}
+
+/* Structural Styles */
+
+body {
+  background: rgb(56, 30, 0) url(fgtuts_parchment_background_by_thedooley.png) center / 80% repeat-y;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1920px;
+  min-width: 320px;
+  width: 70%;
+}
+
+header > img {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  background-color: rgb(56, 30, 0);
+  font-family: Lora, Georgia, serif;
+  font-size: 0.8em;
+  padding: 10px 10px;
+}
+
+footer a {
+  color: #4faf40;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Flex Box Styles */
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.Intro {
+  flex: 1;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.text-container {
+  flex: 1;
+}
+
+/* Navigation Bar Styles */
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(56, 30, 0);
+  font-family: Lora, Georgia, serif;
+  margin-bottom: 35px;
+}
+
+.navbar a {
+  float: right;
+  font-size: 1.2em;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .rellinks {
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 15px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .rellinks {
+  color: black;
+  background-color: #4faf40;
+}
+
+.dropdown-content {
+  display: none;
+  border: 2px solid #4faf40;
+  position: absolute;
+  background-color: rgb(56, 30, 0);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 15px 15px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: black;
+  background-color: #4faf40;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
